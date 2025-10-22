@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enterprise Business Rules", "Enterprise Business Rules", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Business Rules", "Application Business Rules", "{85F42EE6-6536-4A4F-9896-754B094316FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface Adapters", "Interface Adapters", "{ABB20036-59B4-4219-BF41-1E9816C67DDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frameworks & Drivers", "Frameworks & Drivers", "{D2A062EC-A9F2-4CB6-A19E-B0ADFF80F4A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agenda.Entities", "Agenda.Entities\Agenda.Entities.csproj", "{F2CA6D70-CE1F-4F4D-A623-B07AF8E88530}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agenda.UseCases", "Agenda.UseCases\Agenda.UseCases.csproj", "{20F8D5D4-4035-47D7-BF89-BDB73BC5C655}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agenda.Controllers", "Agenda.Controllers\Agenda.Controllers.csproj", "{312D91E2-A8FD-4558-A0FE-56912670AA5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Architecture Docs", "Architecture Docs", "{5268A316-00CD-4E1F-84AF-4D38A5EF662B}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Downloads\Diagram.jpg = ..\..\..\..\Downloads\Diagram.jpg
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agenda.Gateways", "Agenda.Gateways\Agenda.Gateways.csproj", "{978D0292-23A6-4FBF-8F52-B05FFDF28ECD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agenda.Presenters", "Agenda.Presenters\Agenda.Presenters.csproj", "{C49B3318-1DAE-43F7-9690-E3973987D833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agenda.ApiRest", "Agenda.ApiRest\Agenda.ApiRest.csproj", "{2CF9CCA7-6414-4038-B510-C7FC5D50A67E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agenda.EntityFramework.Sqlite", "Agenda.EntityFramework.Sqlite\Agenda.EntityFramework.Sqlite.csproj", "{7B04DA87-0275-44F6-8110-49D7DB5D357B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2CA6D70-CE1F-4F4D-A623-B07AF8E88530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2CA6D70-CE1F-4F4D-A623-B07AF8E88530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2CA6D70-CE1F-4F4D-A623-B07AF8E88530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2CA6D70-CE1F-4F4D-A623-B07AF8E88530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F8D5D4-4035-47D7-BF89-BDB73BC5C655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F8D5D4-4035-47D7-BF89-BDB73BC5C655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F8D5D4-4035-47D7-BF89-BDB73BC5C655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F8D5D4-4035-47D7-BF89-BDB73BC5C655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{312D91E2-A8FD-4558-A0FE-56912670AA5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312D91E2-A8FD-4558-A0FE-56912670AA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312D91E2-A8FD-4558-A0FE-56912670AA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312D91E2-A8FD-4558-A0FE-56912670AA5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{978D0292-23A6-4FBF-8F52-B05FFDF28ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978D0292-23A6-4FBF-8F52-B05FFDF28ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978D0292-23A6-4FBF-8F52-B05FFDF28ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978D0292-23A6-4FBF-8F52-B05FFDF28ECD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C49B3318-1DAE-43F7-9690-E3973987D833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C49B3318-1DAE-43F7-9690-E3973987D833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C49B3318-1DAE-43F7-9690-E3973987D833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C49B3318-1DAE-43F7-9690-E3973987D833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CF9CCA7-6414-4038-B510-C7FC5D50A67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CF9CCA7-6414-4038-B510-C7FC5D50A67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CF9CCA7-6414-4038-B510-C7FC5D50A67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CF9CCA7-6414-4038-B510-C7FC5D50A67E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B04DA87-0275-44F6-8110-49D7DB5D357B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B04DA87-0275-44F6-8110-49D7DB5D357B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B04DA87-0275-44F6-8110-49D7DB5D357B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B04DA87-0275-44F6-8110-49D7DB5D357B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2CA6D70-CE1F-4F4D-A623-B07AF8E88530} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{20F8D5D4-4035-47D7-BF89-BDB73BC5C655} = {85F42EE6-6536-4A4F-9896-754B094316FF}
+		{312D91E2-A8FD-4558-A0FE-56912670AA5E} = {ABB20036-59B4-4219-BF41-1E9816C67DDC}
+		{978D0292-23A6-4FBF-8F52-B05FFDF28ECD} = {ABB20036-59B4-4219-BF41-1E9816C67DDC}
+		{C49B3318-1DAE-43F7-9690-E3973987D833} = {ABB20036-59B4-4219-BF41-1E9816C67DDC}
+		{2CF9CCA7-6414-4038-B510-C7FC5D50A67E} = {D2A062EC-A9F2-4CB6-A19E-B0ADFF80F4A7}
+		{7B04DA87-0275-44F6-8110-49D7DB5D357B} = {D2A062EC-A9F2-4CB6-A19E-B0ADFF80F4A7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A581F7D7-C3B1-4D0B-B116-E964FA572C6B}
+	EndGlobalSection
+EndGlobal

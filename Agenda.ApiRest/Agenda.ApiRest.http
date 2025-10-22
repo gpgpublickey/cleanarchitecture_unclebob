@@ -1,0 +1,11 @@
+@Agenda.ApiRest_HostAddress = http://localhost:5029
+
+POST {{Agenda.ApiRest_HostAddress}}/todos/
+Content-Type: application/json
+Accept: application/json
+{
+  "subject": "Get Weather Forecast",
+  "description": "Retrieve the weather forecast data.",
+  "dueDate": "2024-12-31T23:59:59Z"
+}
+###

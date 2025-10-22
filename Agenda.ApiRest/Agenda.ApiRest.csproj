@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Agenda.Controllers\Agenda.Controllers.csproj" />
+    <ProjectReference Include="..\Agenda.EntityFramework.Sqlite\Agenda.EntityFramework.Sqlite.csproj" />
+    <ProjectReference Include="..\Agenda.Gateways\Agenda.Gateways.csproj" />
+    <ProjectReference Include="..\Agenda.Presenters\Agenda.Presenters.csproj" />
+  </ItemGroup>
+
+</Project>
