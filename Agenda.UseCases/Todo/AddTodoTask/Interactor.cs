@@ -7,12 +7,12 @@ namespace Agenda.UseCases.Todo.AddTodoTask
     public class Interactor : IInputPort
     {
         private readonly IRepository<Entities.Todo.Task> _repository;
+        public readonly IOutputPort _presenter;
 
-        public OutputDataResponse Response { get; set; }
-
-        public Interactor(IRepository<Entities.Todo.Task> repository)
+        public Interactor(IRepository<Entities.Todo.Task> repository, IOutputPort presenter)
         {
             _repository = repository;
+            _presenter = presenter;
         }
 
         public void Handle(InputDataRequest input)
@@ -29,13 +29,14 @@ namespace Agenda.UseCases.Todo.AddTodoTask
                 DueDate = input.DueDate
             });
 
-            Response = new OutputDataResponse
+
+            await _presenter.HandleAsync(new OutputDataResponse
             {
                 Subject = input.Subject,
                 Description = input.Description,
                 CreatedAt = DateTime.Now,
                 CompletedAt = null
-            };
+            });
         }
     }
 }

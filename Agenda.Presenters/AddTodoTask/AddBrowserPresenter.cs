@@ -1,20 +1,21 @@
 ﻿using Agenda.UseCases.Todo.AddTodoTask.Interfaces;
 using Agenda.UseCases.Todo.AddTodoTask.Models;
 
-namespace Agenda.Presenters.Todo
+namespace Agenda.Presenters.AddTodoTask
 {
-    public class BrowserPresenter : IOutputPort<BrowserViewModel>
+    public class AddBrowserPresenter : IOutputPort
     {
-        public BrowserViewModel ViewModel { get; set; }
+        public AddBrowserViewModel ViewModel { get; set; }
 
         public void Handle(OutputDataResponse input)
         {
-            ViewModel = new BrowserViewModel(input);
+            ViewModel = new AddBrowserViewModel(input);
         }
 
         public async Task HandleAsync(OutputDataResponse input)
         {
-            await Task.Run(() => Handle(input));
+            Handle(input);
+            await Task.CompletedTask;
         }
     }
 }

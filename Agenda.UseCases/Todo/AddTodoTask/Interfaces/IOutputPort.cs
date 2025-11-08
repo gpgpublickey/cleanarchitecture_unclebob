@@ -3,8 +3,7 @@ using Agenda.UseCases.Todo.AddTodoTask.Models;
 
 namespace Agenda.UseCases.Todo.AddTodoTask.Interfaces
 {
-    public interface IOutputPort<T> : IPort<OutputDataResponse>
+    public interface IOutputPort : IPort<OutputDataResponse>
     {
-        T ViewModel { get; }
     }
 }

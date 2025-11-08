@@ -1,5 +1,4 @@
-﻿using Agenda.Presenters.Todo;
-using Agenda.UseCases.Interfaces;
+﻿using Agenda.Presenters.AddTodoTask;
 using Agenda.UseCases.Todo.AddTodoTask.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,8 +9,9 @@ namespace Agenda.Controllers
         public static IServiceCollection AddTodoUseCase(this IServiceCollection services)
         {
             services.AddTransient<IInputPort, UseCases.Todo.AddTodoTask.Interactor>();
-            services.AddTransient<IOutputPort<BrowserViewModel>, BrowserPresenter>();
-            services.AddTransient<TodosController>();
+            services.AddScoped<AddBrowserPresenter>();
+            services.AddScoped<IOutputPort>(sp => sp.GetRequiredService<AddBrowserPresenter>());
+            services.AddTransient<TodoTasksController>();
             return services;
         }
     }

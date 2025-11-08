@@ -1,5 +1,6 @@
 Main docs this solution used to implement the Uncle Bob's Clean Architecture.
 
+https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 https://github.com/serodriguez68/clean-architecture/blob/master/part-5-2-architecture.md
 https://softwareengineering.stackexchange.com/questions/357052/clean-architecture-use-case-containing-the-presenter-or-returning-data
 https://github.com/serodriguez68/clean-architecture/blob/master/images/part-5/clean-architecture.png

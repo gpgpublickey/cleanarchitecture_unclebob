@@ -1,10 +1,10 @@
 ﻿using Agenda.UseCases.Todo.AddTodoTask.Models;
 
-namespace Agenda.Presenters.Todo
+namespace Agenda.Presenters.AddTodoTask
 {
-    public class BrowserViewModel
+    public class AddBrowserViewModel
     {
-        public BrowserViewModel(OutputDataResponse response)
+        public AddBrowserViewModel(OutputDataResponse response)
         {
             Description = response.Description;
             Title = response.Subject;
